@@ -31,6 +31,27 @@ html body .header .logo {
 html body .header .logo button {
   border: none;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+html body .header .logo button div {
+  position: relative;
+  width: 20px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+html body .header .logo button div i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  width: 20px;
+  font-size: 25px;
 }
 html body .header .accordion ul {
   margin-left: 0;
@@ -71,6 +92,38 @@ html body .header .accordion .accordion-item .accordion-header .accordion-button
 }
 html body .header .accordion .accordion-item .accordion-body {
   padding: 0px 0;
+}
+html body .header .bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+html body .header .bottom button {
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+html body .header .bottom button div {
+  position: relative;
+  width: 20px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+html body .header .bottom button div i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  width: 20px;
+  font-size: 25px;
 }
 html body .main {
   width: 100vw;
@@ -163,6 +216,13 @@ html body.light .header .logo button {
   background-color: white;
   color: #212529;
 }
+html body.light .header .logo button i.fa-sun {
+  opacity: 1;
+  width: 20px;
+}
+html body.light .header .logo button i.fa-moon {
+  opacity: 0;
+}
 html body.light .header .accordion ul li {
   color: #777777;
 }
@@ -182,6 +242,17 @@ html body.light .header .accordion .accordion-item .accordion-header .accordion-
 html body.light .header .accordion .accordion-item .accordion-header .accordion-button:hover {
   color: black;
 }
+html body.light .header button {
+  background-color: white;
+  color: #212529;
+}
+html body.light .header button i.fa-sun {
+  opacity: 1;
+  width: 20px;
+}
+html body.light .header button i.fa-moon {
+  opacity: 0;
+}
 html body.light .main .paintings-light {
   opacity: 1;
 }
@@ -197,6 +268,13 @@ html body.dark .header {
 html body.dark .header .logo button {
   background-color: black;
   color: white;
+}
+html body.dark .header .logo button i.fa-moon {
+  opacity: 1;
+  width: 20px;
+}
+html body.dark .header .logo button i.fa-sun {
+  opacity: 0;
 }
 html body.dark .header .accordion ul li {
   color: #9e9e9e;
@@ -220,6 +298,20 @@ html body.dark .header .accordion .accordion-item .accordion-header .accordion-b
 }
 html body.dark .header .accordion .accordion-item .accordion-body {
   background-color: black;
+}
+html body.dark .header button {
+  background-color: black;
+  color: white;
+}
+html body.dark .header button i.fa-moon {
+  opacity: 1;
+  width: 20px;
+}
+html body.dark .header button i.fa-sun {
+  opacity: 0;
+}
+html body.dark .header p {
+  color: #9e9e9e;
 }
 html body.dark .main .paintings-light {
   opacity: 0;
